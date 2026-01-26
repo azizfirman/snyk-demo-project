@@ -1,0 +1,9 @@
+{
+  "name": "snyk-demo-project-full",
+  "version": "1.0.0",
+  "main": "app.js",
+  "dependencies": {
+    "express": "4.16.0",
+    "lodash": "4.17.11"
+  }
+}
