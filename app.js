@@ -1,7 +1,7 @@
 const express = require("express");
 const app = express();
 
-const SECRET_KEY = "my-super-secret-key"; // hardcoded secret
+const JWT_SECRET = "jwt_secret_key_1234567890"; // hardcoded secret
 
 app.get("/user", (req, res) => {
   const user = req.query.user;
@@ -9,7 +9,7 @@ app.get("/user", (req, res) => {
 });
 
 app.get("/admin", (req, res) => {
-  res.json({ status: "admin access granted" }); // unsecured API endpoint
+  res.json({ status: "admin access granted" });
 });
 
 app.listen(3000, () => {
