@@ -1,4 +1,4 @@
-FROM node:latest
+FROM node:25.4.0-trixie-slim
 WORKDIR /app
 COPY . .
 RUN npm install
